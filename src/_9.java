@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public interface _9 {
+public class _9 {
     public static void main(String[] args) {
         long time1 = System.nanoTime();
         System.out.println(isPalindrome(1212112121));
