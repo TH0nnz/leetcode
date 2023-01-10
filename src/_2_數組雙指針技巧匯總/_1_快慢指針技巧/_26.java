@@ -1,6 +1,6 @@
-package _2_數組雙指針技巧匯總;
+package _2_數組雙指針技巧匯總._1_快慢指針技巧;
 
-public class offer57 {
+public class _26 {
     public static void main(String[] args) {
       int[]  nums={0,0,1,1,1,2,2,3,3,4};
         removeDuplicates(nums);
@@ -13,12 +13,12 @@ public class offer57 {
         while (fast < nums.length) {
             if (nums[fast] != nums[slow]) {
                 slow++;
-                // 维护 nums[0..slow] 无重复
+                // 維護 nums[0..slow] 無重複
                 nums[slow] = nums[fast];
             }
             fast++;
         }
-        // 数组长度为索引 + 1
+        // 數組長度為索引 + 1
         return slow + 1;
     }
 }

@@ -1,23 +1,49 @@
-import java.util.HashMap;
+package _2_數組雙指針技巧匯總._2_左右指針的常用算法._2_兩數之和;
 
+
+/***
+ * 只要數組有序，就應該想到雙指針技巧。這道題的解法有點類似二分查找，通過調節 left 和 right 就可以調整 sum 的大小：
+ */
 public class _167 {
     public static void main(String[] args) {
-        Integer[] ddddd = twoSumII(new int[]{2, 7, 11, 15}, 9);
+        int[] ddddd = twoSumII(new int[]{2, 7, 11, 15}, 9);
         System.out.println(ddddd);
     }
 
-    public static Integer[] twoSumII(int[] numbers, int target) {
-        HashMap<Integer, Integer> outupt = new HashMap<Integer, Integer>();
-        for (int i = 0; i < numbers.length; i++) {
-            if (outupt.containsKey(target - numbers[i])) {
-                return new Integer[]{outupt.get(target - numbers[i]), i+1};
-            }else {
-                outupt.put(numbers[i], i+1);
+//    public static Integer[] twoSumII(int[] numbers, int target) {
+//        HashMap<Integer, Integer> outupt = new HashMap<Integer, Integer>();
+//        for (int i = 0; i < numbers.length; i++) {
+//            if (outupt.containsKey(target - numbers[i])) {
+//                return new Integer[]{outupt.get(target - numbers[i]), i+1};
+//            }else {
+//                outupt.put(numbers[i], i+1);
+//            }
+//        }
+//        return null;
+//    }
+
+    /***
+     * labuladong
+     *
+     * 解答成功:
+     * 	执行耗时:1 ms,击败了99.22% 的Java用户
+     * 	内存消耗:45.1 MB,击败了84.11% 的Java用户
+     */
+
+    public static int[] twoSumII(int[] numbers, int target) {
+        int left = 0, right = numbers.length - 1;
+        while (left < right) {
+            int sum=numbers[left]+numbers[right];
+            if (sum==target){
+                return new int[]{left+1,right+1};
+            }else if (sum<target){
+                left++;
+            }else if (sum>target){
+                right--;
             }
         }
-        return null;
+        return new int[]{-1,-1};
     }
-
 
 //    /***
 //     *  取小
