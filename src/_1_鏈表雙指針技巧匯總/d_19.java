@@ -3,7 +3,7 @@ package _1_鏈表雙指針技巧匯總;
 import util.create;
 import util.create.ListNode;
 
-public class _19 {
+public class d_19 {
 
     public static void main(String[] args) {
         //[1,2,3,4,5], n = 2

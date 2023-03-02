@@ -1,6 +1,6 @@
 package _1_鏈表雙指針技巧匯總;
 
-public interface _21 {
+public interface a_21 {
     public static void main(String[] args) {
 
         String str1 = "1, 2, 4";

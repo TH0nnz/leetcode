@@ -6,7 +6,7 @@ import util.create.*;
 
 import static util.create.creatListNode;
 
-public class _23 {
+public class c_23 {
 
     public static void main(String[] args) {
         //[[1,4,5],[1,3,4],[2,6]]

@@ -3,7 +3,7 @@ package _1_鏈表雙指針技巧匯總;
 import util.create;
 import util.create.ListNode;
 
-public class _160 {
+public class f_160 {
 
     public static void main(String[] args) {
         System.out.println(getIntersectionNode(create.creatListNode(new int[]{1, 2, 3, 4, 5, 6}), create.creatListNode(new int[]{ 3, 7, 4, 5, 6})));

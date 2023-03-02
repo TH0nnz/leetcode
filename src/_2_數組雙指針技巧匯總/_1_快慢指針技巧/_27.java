@@ -17,3 +17,4 @@ public class _27 {
         return slow;
     }
 }
+

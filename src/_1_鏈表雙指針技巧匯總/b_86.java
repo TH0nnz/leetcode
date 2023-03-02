@@ -1,6 +1,6 @@
 package _1_鏈表雙指針技巧匯總;
 
-public class _86 {
+public class b_86 {
 
     public static void main(String[] args) {
         System.out.println(partition(creat(new int[]{1, 4, 3, 2, 5, 2}), 3));
