@@ -26,8 +26,8 @@ public class _167 {
      * labuladong
      *
      * 解答成功:
-     * 	执行耗时:1 ms,击败了99.22% 的Java用户
-     * 	内存消耗:45.1 MB,击败了84.11% 的Java用户
+     * 	執行耗時:1 ms,擊敗了99.22% 的Java用戶
+     * 	內存消耗:45.1 MB,擊敗了84.11% 的Java用戶
      */
 
     public static int[] twoSumII(int[] numbers, int target) {
